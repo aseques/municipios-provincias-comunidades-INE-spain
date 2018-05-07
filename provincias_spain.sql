@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS `provincias` (
   `provincia_id` int(11) NOT NULL,
   `comunidad_id` tinyint(4) default NULL,
   `nom_provincia` varchar(45) default NULL,
+  `prefix` tinyint(4) default NULL,
   PRIMARY KEY  (`provincia_id`),
   KEY `comunidad_id` (`comunidad_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -33,7 +34,7 @@ INSERT INTO `provincias` (`provincia_id`, `comunidad_id`, `nom_provincia`) VALUE
 (14, 1, 'Córdoba'),
 (15, 12, 'Coruña, A'),
 (16, 8, 'Cuenca'),
-(17, 9, 'Girona'),
+(17, 9, 972 'Girona'),
 (18, 1, 'Granada'),
 (19, 1, 'Guadalajara'),
 (20, 16, 'Gipuzkoa'),
